@@ -3,11 +3,22 @@ package snackBarApp;
 public class Snack {
 
     //fields
+    private static int maxId = 0;
     private int id;
     private String name;
     private int quantity;
     private double cost;
     private int vendingMachId;
+
+    public Snack(String name, int quantity, double cost, int vendingMachId
+    ) {
+        maxId++;
+        id = maxId;
+        this.name = name;
+        this.quantity = quantity;
+        this.cost = cost;
+        this.vendingMachId = vendingMachId;
+    }
 
     //getters & setters 
     public void setId(int id) {
@@ -44,5 +55,18 @@ public class Snack {
 
     public int getVendingMachId(){
         return vendingMachId;
+    }
+
+    //regular methods 
+    public void addQuantity(int quantity) {
+        this.quantity = this.quantity + quantity;
+    }
+
+    public void buySnack(int quantity) {
+        this.quantity = this.quantity - quantity;
+    }
+
+    public double getTotalCost(int quantity) {
+        return cost * quantity;
     }
 }
