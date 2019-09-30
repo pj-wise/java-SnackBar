@@ -22,7 +22,7 @@ public class Snack {
 
     //getters & setters 
     public void setId(int id) {
-        this.id = id
+        this.id = id;
     }
 
     public int getId() {

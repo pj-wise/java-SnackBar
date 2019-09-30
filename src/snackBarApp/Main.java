@@ -23,6 +23,6 @@ public class Main {
 
 
         //Console Checks
-        System.out.println("COMPILED AND WORKING")
+        System.out.println("COMPILED AND WORKING");
     }
 }
