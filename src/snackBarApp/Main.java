@@ -13,7 +13,7 @@ public class Main {
         VendingMachine vend3 = new VendingMachine("Office");
 
         //snacks in vend1
-        Snack s1 = new Snack("Chips", 36, 1.75, vend1.getid());
+        Snack s1 = new Snack("Chips", 36, 1.75, vend1.getId());
         Snack s2 = new Snack("Chocolate Bar", 36, 1.00, vend1.getId());
         Snack s3 = new Snack("Pretzel", 30, 2.00, vend1.getId());
 
