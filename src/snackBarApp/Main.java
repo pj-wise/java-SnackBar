@@ -19,7 +19,7 @@ public class Main {
 
         //snacks in vend2
         Snack s4 = new Snack("Soda", 24, 2.50, vend2.getId());
-        Snack s5 = new Snack("Water", 20, 2.75, veend2.getId());
+        Snack s5 = new Snack("Water", 20, 2.75, vend2.getId());
 
 
         //Console Checks
