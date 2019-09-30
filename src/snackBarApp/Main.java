@@ -21,5 +21,8 @@ public class Main {
         Snack s4 = new Snack("Soda", 24, 2.50, vend2.getId());
         Snack s5 = new Snack("Water", 20, 2.75, veend2.getId());
 
+
+        //Console Checks
+        System.out.println("COMPILED AND WORKING")
     }
 }
