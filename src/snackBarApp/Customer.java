@@ -21,6 +21,10 @@ public class Customer {
         return name;
     }
 
+    public double getCash() {
+        return cash;
+    }
+
     public void addCash(double cash) {
         this.cash = this.cash + cash;
     }

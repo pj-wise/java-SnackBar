@@ -24,5 +24,58 @@ public class Main {
 
         //Console Checks
         System.out.println("COMPILED AND WORKING");
+
+        cust1.buy(s4.getTotalCost(3));
+        s3.buySnack(1);
+        System.out.println("-------- scenario 1 ---------");
+        
+        System.out.println("Customer 1 cash " + cust1.getCash());
+        System.out.println("Snack 3 quantity " + s3.getQuantity());
+        
+     
+        
+        cust2.buy(s4.getTotalCost(2));
+        s4.buySnack(2);
+
+        System.out.println();
+
+        System.out.println("-------- scenario 2 ---------");
+
+        System.out.println("Customer 2 cash " + cust2.getCash());
+        System.out.println("Snack 4 quantity " + s4.getQuantity());
+        System.out.println();
+
+        cust1.addCash(10.00);
+        System.out.println("-------- scenario 3 ---------");
+
+        System.out.println("Customer 1 " + cust1.getCash());
+        System.out.println();
+
+        System.out.println("-------- scenario 4 ---------");
+        cust1.buy(s2.getTotalCost(1));
+        s2.buySnack(1);
+        System.out.println("Customer 1 cash on hand " + cust1.getCash());
+        System.out.println("Quantity of snack 2 is " + s2.getQuantity());
+        System.out.println();
+
+        System.out.println("-------- scenario 5 ---------");
+        cust1.buy(s2.getTotalCost(1));
+        s2.buySnack(1);
+        System.out.println("Customer 1 cash on hand " + cust1.getCash());
+        System.out.println("Quantity of snack 2 is " + s2.getQuantity());
+        System.out.println();
+
+        System.out.println("-------- scenario 6 ---------");
+        s3.addQuantity(12);
+        System.out.println("Quantity of snack 3 is " + s3.getQuantity());
+        System.out.println();
+
+        System.out.println("-------- scenario 7 ---------");
+  cust2.buy(s3.getTotalCost(3));
+        s3.buySnack(3);
+        System.out.println("customer 2 cash on hand " + cust2.getCash());
+        System.out.println("Quantity of snack 3 is " + s3.getQuantity());
+        System.out.println();
+
     }
 }
